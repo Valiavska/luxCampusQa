@@ -59,4 +59,16 @@ class TestCat {
         //THEN
         Assertions.assertEquals(expectedClassPublic, actualClassPublic);
     }
+
+    // check Object property "name"
+    @Test
+    public void checkProperyName() {
+        //GIVEN
+        Cat cat = new Cat("testCat", 3, "pet");
+        String expectedNameCat = "testCat";
+        //WHEN
+        String actualNameCat = cat.getName();
+        //THEN
+        Assertions.assertEquals(expectedNameCat, actualNameCat);
+    }
 }
